@@ -1,0 +1,66 @@
+$background: #2B415F;
+$light: #b9befa;
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	perspective: 800px;
+}
+
+body {
+	background: $background;
+}
+
+* {
+	position: absolute;
+}
+
+*:after,
+*:before {
+	position: absolute;
+	content: '';
+}
+
+.square-container {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	width: 400px;
+	height: 400px;
+	top: 30%;
+	left: 50%;
+	transform: rotate(45deg) translate(-30%, 50%);
+
+	.square {
+		background-color: $light;
+		width: 49%;
+		height: 49%;
+		display: none;
+	}
+
+	.square:nth-of-type(1) {
+		top: 0;
+		left: 0;
+		display: block;
+	}
+
+	.square:nth-of-type(2) {
+		top: 0;
+		left: 0;
+		display: block;
+	}
+
+	.square:nth-of-type(3) {
+		top: 0;
+		left: 51%;
+	}
+
+	.square:nth-of-type(4) {
+		top: 51%;
+		left: 51%;
+	}
+}

@@ -1,0 +1,69 @@
+$background: #3d3d3c;
+$light: #8de769;
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    perspective: 800px;
+}
+
+body {
+    background: $background;
+}
+
+* {
+    position: absolute;
+}
+
+*:after,
+*:before {
+    position: absolute;
+    content: '';
+}
+
+.circles-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .circle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 20px;
+        border-radius: 100%;
+        will-change: transform, rotation;
+        z-index: 2;
+    }
+
+    .circle:nth-of-type(1) {
+        background-color: #FF9204;
+    }
+
+    .circle:nth-of-type(2) {
+        background-color: #FF7120;
+    }
+
+    .circle:nth-of-type(3) {
+        background-color: #FF4D41;
+    }
+
+    .circle:nth-of-type(4) {
+        background-color: #FF2465;
+    }
+
+    .circle:nth-of-type(5) {
+        background-color: #FF047D;
+    }
+}
