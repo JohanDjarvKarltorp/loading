@@ -2,7 +2,7 @@
 Loading animations done with Pug, SCSS and javascript
 
 ## Live demo
-[Cricles](https://johandjarvkarltorp.github.io/loading/circles/)
+[Circles](https://johandjarvkarltorp.github.io/loading/circles/)
 
 [Spinner](https://johandjarvkarltorp.github.io/loading/spinner/)
 
